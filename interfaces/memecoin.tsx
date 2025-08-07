@@ -1,8 +1,9 @@
 export interface Memecoin {
   name: string,
-  ticker: string,
-  marketCap: string,
+  symbol: string,
+  marketcap: string,
+  price: number,
   change: number,
-  imageUrl: string,
-  dexUrl: string
+  logoURI: string,
+  address: string
 }
