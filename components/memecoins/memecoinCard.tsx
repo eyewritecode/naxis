@@ -7,7 +7,7 @@ const MemecoinCard = (coin: Memecoin) => {
     <div className="flex items-center justify-between px-4 py-3 rounded-xl bg-white/5 w-full max-w-xs md:max-w-sm">
       <div className="w-10 h-10 flex-shrink-0 rounded-full overflow-hidden bg-white/10">
         <Image
-          src={coin.imageUrl}
+          src={coin.logoURI}
           alt={coin.name}
           width={20}
           height={20}
@@ -16,7 +16,7 @@ const MemecoinCard = (coin: Memecoin) => {
       </div>
 
       <div className="flex flex-col text-left flex-grow">
-        <span className="text-sm font-semibold">{coin.ticker.toUpperCase()}</span>
+        <span className="text-sm font-semibold">{coin.symbol.toUpperCase()}</span>
         <span className="text-xs text-white/60">{coin.name}</span>
       </div>
 
@@ -27,10 +27,10 @@ const MemecoinCard = (coin: Memecoin) => {
           }`}
         >
           {coin.change >= 0 ? '+' : ''}
-          {coin.change.toFixed(1)}%
+          {coin.change}%
         </div>
         <div className="text-xs text-white/50">
-          {coin.marketCap ?? '$—'}
+          {coin.marketcap ?? '$—'}
         </div>
       </div>
     </div>
