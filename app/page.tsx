@@ -1,4 +1,5 @@
 import MemecoinList from "@/components/memecoins/memecoinList";
+import SwapForm from "@/components/swap/swapForm";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       </p>
 
       <MemecoinList />
-      <MemecoinList />
+      <SwapForm />
     </div>
   );
 }
