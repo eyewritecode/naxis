@@ -4,7 +4,7 @@ export const sampleCoins: Memecoin[] = [
   {
     name: "PENGU",
     symbol: "PENGU",
-    marketcap: "2.6",
+    marketcap: 2.6,
     change: 2,
     price: 324141,
     logoURI: "/pengu.jpg",
@@ -13,7 +13,7 @@ export const sampleCoins: Memecoin[] = [
   {
     name: "USELESS",
     symbol: "USELESS",
-    marketcap: "988",
+    marketcap: 988,
     change: 7,
     price: 324141,
     logoURI: "/useless.jpg",
@@ -22,7 +22,7 @@ export const sampleCoins: Memecoin[] = [
   {
     name: "URANUS",
     symbol: "URANUS",
-    marketcap: "482",
+    marketcap: 482,
     change: 10,
     price: 324141,
     logoURI: "/uranus.jpg",
@@ -31,7 +31,7 @@ export const sampleCoins: Memecoin[] = [
   {
     name: "TROLL",
     symbol: "TROLL",
-    marketcap: "19",
+    marketcap: 19,
     change: -11,
     price: 324141,
     logoURI: "/troll.jpg",
@@ -40,7 +40,7 @@ export const sampleCoins: Memecoin[] = [
   {
     name: "FART",
     symbol: "FART",
-    marketcap: "1.7",
+    marketcap: 1.7,
     price: 324141,
     change: -3,
     logoURI: "/fartcoin.jpg",
