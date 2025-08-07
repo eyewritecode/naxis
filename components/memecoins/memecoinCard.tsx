@@ -1,4 +1,5 @@
 import { Memecoin } from '@/interfaces/memecoin'
+import { formatMarketcap } from '@/lib/utils/format'
 import Image from 'next/image'
 import React from 'react'
 
@@ -30,7 +31,7 @@ const MemecoinCard = (coin: Memecoin) => {
           {coin.change}%
         </div>
         <div className="text-xs text-white/50">
-          {coin.marketcap ?? '$—'}
+          {formatMarketcap(coin.marketcap)}
         </div>
       </div>
     </div>
