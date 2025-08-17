@@ -1,13 +1,13 @@
+'use client'
+
 import React from 'react'
+import { WalletMultiButton } from '@solana/wallet-adapter-react-ui'
+import dynamic from 'next/dynamic'
 
-const ConnectWalletButton = () => {
-  return (
-    <div>
-      <button className="text-sm px-4 py-2 border border-white/20 rounded-md hover:border-white transition-colors">
-        Connect Wallet
-      </button>
-    </div>
-  )
-}
 
-export default ConnectWalletButton
+export default dynamic(
+  () => Promise.resolve(() => (
+    <WalletMultiButton />
+  )),
+  { ssr: false }
+)

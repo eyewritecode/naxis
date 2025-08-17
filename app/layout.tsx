@@ -2,6 +2,8 @@ import "./globals.css";
 import Logo from "@/components/navbar/Logo"
 import { Metadata } from "next";
 import ConnectWalletButton from "@/components/navbar/ConnectWalletButton";
+import solanaWalletProvider from "@/components/wallet/SolanaWalletProvider";
+import SolanaWalletProvider from "@/components/wallet/SolanaWalletProvider";
 
 export const metadata: Metadata = {
   title: 'Naxis',
@@ -16,13 +18,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-[var(--foreground)] text-[var(--background)] font-sans min-h-screen flex flex-col">
-        <header className="flex items-center justify-between px-6 py-4">
-          <Logo />
-          <ConnectWalletButton />
-        </header>
-        <main className="flex-grow flex flex-col items-center px-6 py-10">
-          {children}
-        </main>
+        <SolanaWalletProvider>
+          <header className="flex items-center justify-between px-6 py-4">
+            <Logo />
+            <ConnectWalletButton />
+          </header>
+          <main className="flex-grow flex flex-col items-center px-6 py-10">
+            {children}
+          </main>
+        </SolanaWalletProvider>
       </body>
     </html>
   );
